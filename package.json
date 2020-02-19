@@ -1,20 +1,21 @@
 {
-    "name": "api",
-    "version": "1.0.0",
-    "description": "Convert to Romans",
-    "author": "Peter Arboleda",
-    "main": "index.js",
-    "scripts": {
-      "start": "node app.js",
-      "test": "mocha tests/test.js"
-    },
-    "dependencies": {
-      "express": "^4.16.0"
-    },
-    "devDependencies": {
-      "chai": "^4.2.0",
-      "mocha": "^3.2.0",
-      "server-listening": "^0.1.5",
-      "supertest": "^2.0.1"
-    }
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Convert to Romans",
+  "author": "Peter Arboleda",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha tests/spec.js"
+  },
+  "dependencies": {
+    "express": "^4.16.0",
+    "prompt": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^3.2.0",
+    "server-listening": "^0.1.5",
+    "supertest": "^2.0.1"
   }
+}

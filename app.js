@@ -24,12 +24,12 @@ function convert(myNumber){
 function parseNumber(myNumber, one, five, ten) {
     var result = '';
     switch (myNumber) {
-      case 0: return result;
-      case 9: return one + ten;
-      case 4: return one + five;
+        case 0: return result;
+        case 9: return one + ten;
+        case 4: return one + five;
     }
     if (myNumber >= 5) result = five, myNumber -= 5;
-    while (myNumber-- > 0) result += one;
+        while (myNumber-- > 0) result += one;
     return result;
   }
 
@@ -40,7 +40,6 @@ const readline = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
   })
-  
   readline.question(`Enter a number :`, (number) => {
     console.log(`In Roman: ${convert(number)} \t`);
     readline.close();
